@@ -24,8 +24,8 @@ class SymmetricEncryptionUtilsTest {
         assertNotNull(cipherText);
         String decryptedText = SymmetricEncryptionUtils.performAESDecryption(cipherText, key, initializationVector);
         assertEquals(plainText, decryptedText);
-        System.out.println("SecureRandom Generated AES Key: " + DatatypeConverter.printHexBinary(initializationVector));
-        System.out.println("SecureRandom Generated InitializationVector: " + DatatypeConverter.printHexBinary(key.getEncoded()));
+        System.out.println("SecureRandom Generated InitializationVector: " + DatatypeConverter.printHexBinary(initializationVector));
+        System.out.println("SecureRandom Generated AES Key: " + DatatypeConverter.printHexBinary(key.getEncoded()));
         System.out.println("PlainText: " + plainText);
         System.out.println("CipherText: " + DatatypeConverter.printHexBinary(cipherText));
         System.out.println("Decrypted Text: " + decryptedText);
