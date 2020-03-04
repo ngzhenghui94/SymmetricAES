@@ -1,4 +1,5 @@
-Symmetric AES-256 Encryption Algorithm in CBC mode with PKCS5Padding
+Symmetric AES-256 Encryption Algorithm in CBC mode with PKCS5Padding using Java Cryptography Library
+
 
 # How to use
 ## To Generate the AES Key:
