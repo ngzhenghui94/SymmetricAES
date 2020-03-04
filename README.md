@@ -1,5 +1,4 @@
-Symmetric AES-256 Encryption Algorithm in CBC mode with PKCS5Padding using Java Cryptography Library
-
+Symmetric AES-256 Encryption Algorithm in CBC mode with PKCS5Padding
 
 # How to use
 ## To Generate the AES Key:
@@ -12,8 +11,8 @@ Symmetric AES-256 Encryption Algorithm in CBC mode with PKCS5Padding using Java 
 ## To Begin Decrypting with your Symmetric AES key:
 >String decryptedText = SymmetricEncryptionUtils.performAESDecryption(cipherText, key, initializationVector);
 ## Printing All outputs:
->System.out.println("SecureRandom Generated AES Key: " + DatatypeConverter.printHexBinary(initializationVector));<br>
->System.out.println("SecureRandom Generated InitializationVector: " + DatatypeConverter.printHexBinary(key.getEncoded()));<br>
+>System.out.println("SecureRandom Generated InitializationVector: " + DatatypeConverter.printHexBinary(initializationVector));<br>
+>System.out.println("SecureRandom Generated AES Key: " + DatatypeConverter.printHexBinary(key.getEncoded()));<br>
 >System.out.println("PlainText: " + plainText);<br>
 >System.out.println("CipherText: " + DatatypeConverter.printHexBinary(cipherText));<br>
 >System.out.println("Decrypted Text: " + decryptedText);<br>
